@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee; http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>FirstWebProj</display-name>
+  <welcome-file-list>
+  	<welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>com.veracity.controllers.HelloServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/date</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.veracity.controllers.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+   
+   <servlet>
+  	<servlet-name>Update</servlet-name>
+  	<servlet-class>com.veracity.controllers.UpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Update</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>Delete</servlet-name>
+  	<servlet-class>com.veracity.controllers.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Delete</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Select</servlet-name>
+  	<servlet-class>com.veracity.controllers.SelectServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Select</servlet-name>
+  	<url-pattern>/select</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>SelectAll</servlet-name>
+  	<servlet-class>com.veracity.controllers.SelectAllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SelectAll</servlet-name>
+  	<url-pattern>/selectAll</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.veracity.controllers.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<servlet-class>com.veracity.controllers.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogoutServlet</servlet-name>
+  	<url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>InboxServlet</servlet-name>
+  	<servlet-class>com.veracity.controllers.InboxServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>InboxServlet</servlet-name>
+  	<url-pattern>/inbox</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+ 
+</web-app>
